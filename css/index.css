@@ -1,0 +1,284 @@
+.floor {
+  position: relative;
+  overflow: hidden;
+}
+.floor .slider-bg {
+  position: absolute;
+  width: 150%;
+  height: 2.5rem;
+  top: 0;
+  left: -25%;
+  border-radius: 0 0 50% 50%;
+  background-color: #cd2525;
+  z-index: 0;
+}
+.floor .carousel {
+  position: relative;
+  margin: 0.46875rem 0.3125rem 0;
+  height: 3rem;
+  border-radius: 0.234375rem;
+  overflow: hidden;
+  z-index: 1;
+}
+.floor .carousel ul {
+  width: 100%;
+  height: 100%;
+}
+.floor .carousel .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.floor .carousel img {
+  width: 100%;
+  height: 100%;
+}
+.floor .indicator {
+  position: absolute;
+  width: 100%;
+  height: 0.3125rem;
+  line-height: 0.3125rem;
+  left: 0;
+  z-index: 1;
+  bottom: 0.15625rem;
+  text-align: center;
+  font-size: 0;
+}
+.floor .indicator span {
+  display: inline-block;
+  width: 0.1125rem;
+  height: 0.1125rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  margin: 0 0.03125rem;
+  vertical-align: middle;
+}
+
+.box-list {
+  position: relative;
+  height: 3.75rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.box-list .box-item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 20%;
+  color: #6b6b6c;
+  font-size: 0.28125rem;
+}
+.box-list img {
+  margin-top: 0.21875rem;
+  width: 0.90625rem;
+  height: 0.90625rem;
+}
+.box-list span {
+  margin-top: 0.140625rem;
+}
+
+.graphic, .graphic-sub .graphic-inner {
+  display: flex;
+  margin: 0 0.234375rem;
+  background: #ffffff;
+}
+.graphic .graphic-item, .graphic-sub .graphic-inner .graphic-item {
+  width: 25%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  padding: 0.125rem 0 0 0.234375rem;
+}
+.graphic .graphic-item strong, .graphic-sub .graphic-inner .graphic-item strong {
+  display: block;
+  font-size: 0.34375rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+.graphic .graphic-item p, .graphic-sub .graphic-inner .graphic-item p {
+  font-size: 0.28125rem;
+}
+.graphic .graphic-item img, .graphic-sub .graphic-inner .graphic-item img {
+  width: 1.359375rem;
+  height: 1.359375rem;
+}
+
+.seckill {
+  margin: 0.462962963rem 0.1851851852rem 0;
+  border-radius: 0.2777777778rem;
+  overflow: hidden;
+  background: #ffffff;
+}
+.seckill .seckill-title {
+  height: 0.9259259259rem;
+  display: flex;
+  align-items: center;
+  background: url("../images/seckillback.png") no-repeat;
+  background-size: 100%;
+}
+.seckill .seckill-title span:nth-child(1) {
+  margin: 0 0.3703703704rem;
+  font-size: 0.3703703704rem;
+}
+.seckill .seckill-title span:nth-child(2) {
+  position: relative;
+  font-size: 16px;
+  color: #cd2525;
+}
+.seckill .seckill-title span:nth-child(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -0.0925925926rem;
+  right: -0.5925925926rem;
+  width: 0.5555555556rem;
+  height: 0.462962963rem;
+  background: url("../images/after.png") no-repeat center;
+  background-size: 0.5555555556rem 0.462962963rem;
+}
+.seckill .seckill-title span:nth-child(3) {
+  margin-left: auto;
+  margin-right: 0.5555555556rem;
+  position: relative;
+  font-size: 0.3194444444rem;
+}
+.seckill .seckill-title span:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0.0185185185rem;
+  right: -0.3703703704rem;
+  width: 0.2962962963rem;
+  height: 0.2962962963rem;
+  background: url("../images/direction.png") no-repeat;
+  background-size: 0.2962962963rem;
+}
+.seckill .seckill-inner {
+  display: flex;
+}
+.seckill .seckill-item {
+  display: flex;
+  flex-flow: column wrap;
+  width: 25%;
+  align-items: center;
+}
+.seckill .seckill-item img {
+  max-width: 100%;
+  height: auto;
+}
+.seckill .seckill-item span {
+  font-size: 0.3462962963rem;
+}
+.seckill .seckill-item span:nth-of-type(1) {
+  margin-top: 0.2592592593rem;
+  color: #cd2525;
+}
+.seckill .seckill-item span:first-letter {
+  font-size: 0.2222222222rem;
+}
+.seckill .seckill-item span:nth-of-type(2) {
+  margin-top: 0.1111111111rem;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.graphic-sub {
+  margin-top: 0.3703703704rem;
+  border-radius: 0.2777777778rem;
+  display: block;
+  overflow: hidden;
+}
+.graphic-sub .graphic-header {
+  display: flex;
+  margin: 0.1851851852rem 0;
+}
+.graphic-sub .graphic-header .graphic-header-item {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 0.1851851852rem;
+  flex: 1;
+}
+.graphic-sub .graphic-header span {
+  line-height: 0.5925925926rem;
+  font-size: 0.4259259259rem;
+}
+.graphic-sub .graphic-header p {
+  font-size: 0.3203703704rem;
+  color: #666771;
+}
+.graphic-sub .graphic-header .img-box {
+  display: flex;
+  margin: 0 10px;
+}
+.graphic-sub .graphic-header img {
+  flex: 0 1;
+  width: 1.5925925926rem;
+  height: auto;
+  margin: 0.1481481481rem 0.1851851852rem 0;
+}
+.goods {
+  display: flex;
+  margin: 15px 10px 0;
+}
+.goods .goods-item {
+  display: flex;
+  flex: 0 1 50%;
+  flex-flow: column wrap;
+  padding-bottom: 0.3703703704rem;
+  background-color: #ffffff;
+  -webkit-border-radius: 0.2777777778rem;
+  -moz-border-radius: 0.2777777778rem;
+  border-radius: 0.2777777778rem;
+  overflow: hidden;
+}
+.goods .goods-item:nth-child(odd) {
+  margin-right: 0.1481481481rem;
+}
+.goods .goods-item:nth-child(even) {
+  margin-left: 0.1481481481rem;
+}
+.goods .goods-item .goods-img {
+  max-width: 100%;
+  height: auto;
+}
+.goods .goods-item .span-text {
+  margin: 0.0925925926rem 0 0.0555555556rem;
+  max-width: 100%;
+  height: 0.5925925926rem;
+  line-height: 0.2962962963rem;
+  font-size: 0.2222222222rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods .goods-item .span-text img {
+  width: 0.8703703704rem;
+  height: 0.2407407407rem;
+  vertical-align: middle;
+}
+.goods .goods-item p {
+  display: flex;
+}
+.goods .goods-item p span:first-child {
+  font-size: 0.2962962963rem;
+  color: #fa2c19;
+}
+.goods .goods-item p span:first-child:first-letter {
+  font-size: 0.2407407407rem;
+}
+.goods .goods-item p span:last-child {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 0.1481481481rem;
+  padding: 0 0.1296296296rem;
+  line-height: 0.3703703704rem;
+  -webkit-border-radius: 0.1851851852rem;
+  -moz-border-radius: 0.1851851852rem;
+  border-radius: 0.1851851852rem;
+  font-size: 0.2777777778rem;
+  color: #808080;
+  background-color: #f0f2f5;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  min-width: 300px;
+  max-width: 640px;
+  margin: 0 auto;
+  width: 100%;
+  background: #f6f6f6;
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 30px !important;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 64px !important;
+  }
+}
+.common-tip {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 0.78125rem;
+  background-color: #262528;
+  z-index: 1;
+}
+.common-tip img:nth-child(1) {
+  width: 0.25rem;
+  height: 0.25rem;
+  margin: 0 0.234375rem;
+}
+.common-tip img:nth-child(2) {
+  width: 0.546875rem;
+  height: 0.546875rem;
+  margin: 0 0.15625rem;
+}
+.common-tip .download {
+  flex: 5;
+}
+.common-tip .download p {
+  margin: -0.015625rem 0 0.046875rem;
+  color: #ffffff;
+  font-size: 0.21875rem;
+}
+.common-tip .download em {
+  color: #cccccc;
+}
+.common-tip .download-action {
+  flex: 3;
+  height: 0.78125rem;
+  line-height: 0.78125rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.234375rem;
+  background-color: #cd2525;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: -0.1px;
+  left: 0;
+  right: 0;
+  height: 0.6875rem;
+  background: #cd2525;
+  z-index: 10;
+}
+header img {
+  width: 0.3125rem;
+  height: 0.28125rem;
+  margin: 0 0.234375rem;
+}
+header .search {
+  flex: 1;
+  display: flex;
+  padding: 0 0.15625rem 0 0;
+  height: 0.46875rem;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 0.3125rem;
+  background: #ffffff;
+}
+header .search i {
+  display: block;
+  height: 0.234375rem;
+}
+header .search i:nth-child(1) {
+  width: 0.3125rem;
+  padding-right: 0.125rem;
+  margin: 0 0 0 0.234375rem;
+  background: url("../images/下载.png") no-repeat;
+  background-size: 0.3125rem 0.234375rem;
+  border-right: 0.015625rem solid #ddd;
+}
+header .search i:nth-child(2) {
+  width: 0.234375rem;
+  margin: 0 0.234375rem 0 0.125rem;
+  background: url("../images/jd-sprites.png") no-repeat -1.296875rem 0rem;
+  background-size: 3.125rem auto;
+}
+header .search .search-input {
+  height: 0.46875rem;
+  line-height: 0.46875rem;
+}
+header span {
+  margin: 0 0.3125rem 0 0.234375rem;
+  font-size: 0.234375rem;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=common.css.map */
